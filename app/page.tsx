@@ -41,7 +41,7 @@ export default function Home() {
                     asChild
                     className="bg-gradient-to-r from-accent to-yellow-400 text-accent-foreground hover:from-accent/90 hover:to-yellow-400/90 transition-all duration-300 hover:scale-105 ai-glow"
                   >
-                    <Link href="/dashboard">Get Started Free</Link>
+                    <Link href="/signup">Get Started Free</Link>
                   </Button>
                   <Button
                     size="lg"
@@ -49,7 +49,7 @@ export default function Home() {
                     asChild
                     className="border-accent/30 text-foreground hover:bg-accent/5 transition-all duration-300 bg-transparent glass-effect"
                   >
-                    <Link href="#how-it-works">Learn More</Link>
+                    
                   </Button>
                 </div>
                 <div className="pt-4 flex gap-6 text-sm">
@@ -69,7 +69,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-blue-500/10 to-purple-500/10 rounded-3xl blur-3xl floating-element"></div>
                 <div className="relative group">
                   {/* 3D Book Effect */}
-                  <div className="w-64 h-80 bg-gradient-to-br from-accent/20 via-blue-500/10 to-purple-500/10 rounded-2xl border border-accent/30 shadow-2xl flex items-center justify-center transform hover:scale-105 transition-all duration-500 hover:rotate-1 ai-glow">
+                  <div className="w-103 h-130 bg-gradient-to-br from-accent/20 via-blue-500/10 to-purple-500/10 rounded-2xl border border-accent/30 shadow-2xl flex items-center justify-center transform hover:scale-105 transition-all duration-500 hover:rotate-1 ai-glow">
                     {/* Book Spine */}
                     <div className="absolute left-0 top-4 bottom-4 w-2 book-spine rounded-l-lg"></div>
 
@@ -105,7 +105,7 @@ export default function Home() {
                   {/* Floating Particles Around Book */}
                   <div className="absolute -top-4 -right-4 w-3 h-3 bg-accent rounded-full floating-element opacity-60"></div>
                   <div className="absolute -bottom-4 -left-4 w-2 h-2 bg-blue-400 rounded-full floating-element opacity-60" style={{ animationDelay: '2s' }}></div>
-                  <div className="absolute top-1/2 -right-6 w-2 h-2 bg-purple-400 rounded-full floating-element opacity-60" style={{ animationDelay: '4s' }}></div>
+                  <div className="absolute top-1/2 -right-6 w-2 h-2 bg-yellow-400 rounded-full floating-element opacity-60" style={{ animationDelay: '4s' }}></div>
                 </div>
               </div>
             </div>
@@ -113,9 +113,9 @@ export default function Home() {
             {/* Enhanced Stats with Animations */}
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-12 border-t border-border/50">
               {[
-                { value: "50K+", label: "Books Digitized", icon: "📚", color: "from-accent to-yellow-400" },
-                { value: "99.9%", label: "Uptime", icon: "⚡", color: "from-blue-500 to-purple-500" },
-                { value: "10K+", label: "Active Users", icon: "👥", color: "from-green-500 to-teal-500" },
+                { value: "", label: "Books Digitized", icon: "", color: "from-golden-500 to-zinc-800",  },
+                { value: "", label: "Uptime", icon: "", color: "from-golden-500 to-zinc-800" },
+                { value: "", label: "Active Users", icon: "", color: "from-golden-500 to-zinc-800" },
               ].map((stat, i) => (
                 <div key={i} className="text-center group">
                   <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${stat.color} mb-4 ai-glow group-hover:scale-110 transition-transform duration-300`}>
@@ -148,32 +148,32 @@ export default function Home() {
                   step: 1,
                   title: "Record Video",
                   desc: "Flip through your book with your smartphone camera",
-                  icon: "🎥",
-                  color: "from-blue-500 to-cyan-500",
+                  icon: "",
+                  color: "from-golden-500 to-cyan-500",
                   glow: "glow-secondary",
                 },
                 {
                   step: 2,
                   title: "Upload",
                   desc: "Submit your video file to BookVision",
-                  icon: "☁️",
-                  color: "from-purple-500 to-pink-500",
+                  icon: "",
+                  color: "from-golden-500 to-neutral-500",
                   glow: "glow-accent",
                 },
                 {
                   step: 3,
                   title: "AI Processing",
                   desc: "Automatic page detection and glare removal",
-                  icon: "⚡",
-                  color: "from-accent to-yellow-400",
+                  icon: "",
+                  color: "from-golden to-yellow-400",
                   glow: "glow-primary",
                 },
                 {
                   step: 4,
                   title: "Download & Own",
                   desc: "Get PDF, IPFS link, and NFT certificate",
-                  icon: "🏆",
-                  color: "from-green-500 to-emerald-500",
+                  icon: "",
+                  color: "from-golden-900 to-emerald-500",
                   glow: "glow-secondary",
                 },
               ].map((item) => (
@@ -217,17 +217,17 @@ export default function Home() {
                 {
                   title: "Smart Page Detection",
                   desc: "AI identifies book pages from video automatically",
-                  icon: "📄",
+                  icon: "",
                 },
                 {
                   title: "Glare & Reflection Removal",
                   desc: "Advanced algorithms clean up reflections and shadows",
-                  icon: "✨",
+                  icon: "",
                 },
-                { title: "OCR & Text Extraction", desc: "Searchable text from every page", icon: "🔍" },
-                { title: "PDF Generation", desc: "High-quality, optimized PDFs ready to share", icon: "📋" },
-                { title: "IPFS Storage", desc: "Permanent, decentralized storage with content addressing", icon: "🔐" },
-                { title: "NFT Minting", desc: "Mint NFTs to prove ownership and uniqueness", icon: "🎖️" },
+                { title: "OCR & Text Extraction", desc: "Searchable text from every page", icon: "" },
+                { title: "PDF Generation", desc: "High-quality, optimized PDFs ready to share", icon: "" },
+                { title: "IPFS Storage", desc: "Permanent, decentralized storage with content addressing", icon: "" },
+                { title: "NFT Minting", desc: "Mint NFTs to prove ownership and uniqueness", icon: "" },
               ].map((feature, i) => (
                 <div key={i} className="luxury-card border border-border/50 hover:border-accent/50">
                   <div className="text-4xl mb-3">{feature.icon}</div>
@@ -249,12 +249,12 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { icon: "🎓", title: "Students", desc: "Digitize textbooks for searchable study materials" },
-                { icon: "👨‍🏫", title: "Teachers", desc: "Build digital classroom libraries and archives" },
-                { icon: "📚", title: "Libraries", desc: "Scale digitization of entire collections" },
-                { icon: "🏢", title: "Publishers", desc: "Archive and monetize rare or valuable editions" },
-                { icon: "🏛️", title: "Institutions", desc: "Preserve historical documents and collections" },
-                { icon: "👤", title: "Book Collectors", desc: "Create searchable catalogs of personal collections" },
+                { icon: "", title: "Students", desc: "Digitize textbooks for searchable study materials" },
+                { icon: "", title: "Teachers", desc: "Build digital classroom libraries and archives" },
+                { icon: "", title: "Libraries", desc: "Scale digitization of entire collections" },
+                { icon: "", title: "Publishers", desc: "Archive and monetize rare or valuable editions" },
+                { icon: "", title: "Institutions", desc: "Preserve historical documents and collections" },
+                { icon: "", title: "Book Collectors", desc: "Create searchable catalogs of personal collections" },
               ].map((useCase, i) => (
                 <div key={i} className="luxury-card border border-border/50 flex items-start gap-4">
                   <div className="text-4xl flex-shrink-0">{useCase.icon}</div>
@@ -338,7 +338,7 @@ export default function Home() {
                     {plan.per && <span className="text-muted-foreground">{plan.per}</span>}
                   </div>
                   <Button className="w-full mb-8" variant={plan.featured ? "default" : "outline"} asChild>
-                    <Link href="/dashboard">{plan.cta}</Link>
+                    <Link href="/login">{plan.cta}</Link>
                   </Button>
                   <ul className="space-y-3">
                     {plan.features.map((feature, j) => (
@@ -376,7 +376,7 @@ export default function Home() {
                     asChild
                     className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:scale-105"
                   >
-                    <Link href="/dashboard">Get Started Free</Link>
+                    <Link href="/signup">Get Started Free</Link>
                   </Button>
                   <Button
                     size="lg"

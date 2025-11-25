@@ -97,7 +97,11 @@ export default function SignupPage() {
             className="flex items-center justify-center gap-2 mb-12 transition-all duration-300 hover:scale-105 ai-glow rounded-lg px-2 py-1"
           >
             <div className="w-10 h-10 bg-gradient-to-br from-accent to-yellow-400 rounded-lg flex items-center justify-center text-accent-foreground text-white font-bold pulse-glow">
-              BV
+              <img
+              src="9.png"
+              alt="BookVision Logo"
+              className="relative h-full w-full object-cover rounded-2xl"
+            />
             </div>
             <span className="font-bold text-xl text-gradient">BookVision</span>
           </Link>

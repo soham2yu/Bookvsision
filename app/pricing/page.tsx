@@ -299,22 +299,33 @@ export default function PricingPage() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-accent text-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-4">Ready to get started?</h2>
-            <p className="text-lg opacity-90 mb-8">Choose a plan and start digitizing your book collection today.</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild className="transition-all duration-300 hover:scale-105">
-                <Link href="/signup">Get Started Free</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="transition-all duration-300 hover:scale-105 text-white border-white hover:bg-white/10 bg-transparent"
-              >
-                <Link href="/contact">Contact Sales</Link>
-              </Button>
+        <section className="py-24 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent/10 to-transparent rounded-3xl blur-3xl"></div>
+              <div className="relative border border-accent/30 bg-gradient-to-br from-card to-card/50 rounded-3xl p-12 text-center golden-glow">
+                <h2 className="text-3xl font-bold mb-4">Ready to Digitize Your Books?</h2>
+                <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+                  Join thousands of users preserving knowledge and building searchable libraries.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button
+                    size="lg"
+                    asChild
+                    className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:scale-105"
+                  >
+                    <Link href="/dashboard">Get Started Free</Link>
+                  </Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    asChild
+                    className="border-accent/30 text-foreground hover:bg-accent/5 bg-transparent"
+                  >
+                    <Link href="/pricing">View Pricing</Link>
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
