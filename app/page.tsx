@@ -69,12 +69,12 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-blue-500/10 to-purple-500/10 rounded-3xl blur-3xl floating-element"></div>
                 <div className="relative group">
                   {/* 3D Book Effect */}
-                  <div className="w-103 h-130 bg-gradient-to-br from-accent/20 via-blue-500/10 to-purple-500/10 rounded-2xl border border-accent/30 shadow-2xl flex items-center justify-center transform hover:scale-105 transition-all duration-500 hover:rotate-1 ai-glow">
+                  <div className="w-107 h-130 bg-gradient-to-br from-accent/20 via-blue-500/10 to-purple-500/10 rounded-2xl border border-accent/30 shadow-2xl flex items-center justify-center transform hover:scale-102 hover:w-[700px] transition-all duration-500  ai-glow">
                     {/* Book Spine */}
-                    <div className="absolute left-0 top-4 bottom-4 w-2 book-spine rounded-l-lg"></div>
+                    <div className="absolute left-5 top-4 bottom-4 w-2 book-spine rounded-l-lg"></div>
 
                     {/* Book Pages Animation */}
-                    <div className="relative w-full h-full flex items-center justify-center">
+                    <div className="relative w-96 h-130 flex items-center justify-center">
                       <div className="absolute inset-4 bg-gradient-to-r from-transparent via-white/5 to-transparent rounded-xl animate-pulse"></div>
                       <div className="text-center relative z-10">
                         <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-accent to-yellow-400 rounded-full flex items-center justify-center pulse-glow">
@@ -113,9 +113,9 @@ export default function Home() {
             {/* Enhanced Stats with Animations */}
             <div className="grid grid-cols-3 gap-4 md:gap-8 pt-12 border-t border-border/50">
               {[
-                { value: "", label: "Books Digitized", icon: "", color: "from-golden-500 to-zinc-800",  },
-                { value: "", label: "Uptime", icon: "", color: "from-golden-500 to-zinc-800" },
-                { value: "", label: "Active Users", icon: "", color: "from-golden-500 to-zinc-800" },
+                { value: "0", label: "Books Digitized", icon: "📒", color: "from-gold to-zinc-400" },
+                { value: "99.9%", label: "Uptime", icon: "⚡", color: "from-gold to-blue-400" },
+                { value: "0", label: "Active Users", icon: "⚙️", color: "from-gold to-purple-400" },
               ].map((stat, i) => (
                 <div key={i} className="text-center group">
                   <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${stat.color} mb-4 ai-glow group-hover:scale-110 transition-transform duration-300`}>
@@ -217,17 +217,17 @@ export default function Home() {
                 {
                   title: "Smart Page Detection",
                   desc: "AI identifies book pages from video automatically",
-                  icon: "",
+                  icon: "-",
                 },
                 {
                   title: "Glare & Reflection Removal",
                   desc: "Advanced algorithms clean up reflections and shadows",
-                  icon: "",
+                  icon: "-",
                 },
-                { title: "OCR & Text Extraction", desc: "Searchable text from every page", icon: "" },
-                { title: "PDF Generation", desc: "High-quality, optimized PDFs ready to share", icon: "" },
-                { title: "IPFS Storage", desc: "Permanent, decentralized storage with content addressing", icon: "" },
-                { title: "NFT Minting", desc: "Mint NFTs to prove ownership and uniqueness", icon: "" },
+                { title: "OCR & Text Extraction", desc: "Searchable text from every page", icon: "-" },
+                { title: "PDF Generation", desc: "High-quality, optimized PDFs ready to share", icon: "-" },
+                { title: "IPFS Storage", desc: "Permanent, decentralized storage with content addressing", icon: "-" },
+                { title: "NFT Minting", desc: "Mint NFTs to prove ownership and uniqueness", icon: "-" },
               ].map((feature, i) => (
                 <div key={i} className="luxury-card border border-border/50 hover:border-accent/50">
                   <div className="text-4xl mb-3">{feature.icon}</div>

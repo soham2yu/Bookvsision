@@ -98,10 +98,10 @@ export default function SignupPage() {
           >
             <div className="w-10 h-10 bg-gradient-to-br from-accent to-yellow-400 rounded-lg flex items-center justify-center text-accent-foreground text-white font-bold pulse-glow">
               <img
-              src="9.png"
-              alt="BookVision Logo"
-              className="relative h-full w-full object-cover rounded-2xl"
-            />
+                src="9.png"
+                alt="BookVision Logo"
+                className="relative h-full w-full object-cover rounded-2xl"
+              />
             </div>
             <span className="font-bold text-xl text-gradient">BookVision</span>
           </Link>
